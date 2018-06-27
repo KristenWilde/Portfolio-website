@@ -1,0 +1,120 @@
+body {
+  padding: 10px 50px;
+  font: normal 15px/1.6 Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+nav {
+  position: fixed;
+}
+
+nav li {
+  display: inline-block;
+  width: 5em;
+  line-height: 2.8em;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #555;
+  text-align: center;
+}
+
+nav li:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#name {
+  font-size: 4rem;
+  padding-top: 3.5rem;
+}
+
+h1, h2 {
+  font-weight: 200;
+}
+
+h2, h3 {
+  padding: .5em 0;
+}
+
+header {
+  float: left;
+  width: 60%;
+}
+
+#portrait {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+#portrait img {
+  width: 10rem;
+}
+
+#skills ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px 20px;
+}
+
+section, #skills {
+  clear: both;
+}
+
+.project {
+  box-sizing: border-box;
+  width: 360px;
+  height: 540px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  float: left;
+  /*vertical-align: top;*/
+}
+
+.project img {
+  width: 100%;
+  margin: 15px -5px 10px;
+  border: 2px solid #ddd;
+}
+
+.project ul {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .project {
+    max-width: 400px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  #name {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  header {
+    width: 100%;
+  }
+  #portrait {
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

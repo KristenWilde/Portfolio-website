@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Website to demonstrate my work and skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristenWilde/Portfolio-website.git"
+  },
+  "author": "Kristen Wilde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristenWilde/Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/KristenWilde/Portfolio-website#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.3"
+  }
+}

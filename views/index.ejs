@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kristen Wilde</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/portfolio.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <h1 id="name">Kristen Wilde</h1>
+    <h1>Full-stack Web Application Engineer</h1>
+  </header>
+  <div id="portrait">
+    <img src="/images/kristen2018.jpg" alt="Headshot"/>
+  </div>
+
+  <div id="skills">
+    <h2>Skills include:</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Node/Express.js</li>
+      <li>Vue.js</li>
+      <li>jQuery</li>
+      <li>Handlebars</li>
+      <li>EJS</li>
+    </ul>
+    <ul>
+      <li>Ruby</li>
+      <li>Ruby on Rails</li>
+      <li>Sinatra</li>
+      <li>ERB, Haml</li>
+      <li>PosgtreSQL</li>
+    </ul>
+    <ul>
+      <li>Regular Expressions</li>
+      <li>HTML</li>
+      <li>CSS, Sass</li>
+      <li>Bootstrap</li>
+      <li>Photoshop</li>
+    </ul>
+  </div>
+  <section id="portfolio">
+    <h2>Sample work:</h2>
+    <% projects.forEach(function(project) { %>
+      <div class="project">
+        <h3><%= project.title %></h3>
+        <h4><%= project.tech %></h4>
+        <a href="<%= project.img_url %>">
+          <img src="/images/<%= project.img %>" alt="screenshot"/>
+        </a>
+        <p><%= project.description %></p>
+        <ul>
+          <% project.links.forEach(function(link) { %>
+          <li><a href="<%= link.url %>"><%= link.name %></a></li>
+          <% }); %>
+        </ul>
+      </div>
+    <% }); %>
+  </section>
+  <section id="about">
+    <h2>About me:</h2>
+    <p>I'm cool.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact me:</h2>
+    <p>Email:
+      <a href="mailto:kristen.wilde@gmail.com">kristen.wilde@gmail.com</a>
+    </p>
+    <p><a href="https://www.linkedin.com/in/kristen-wilde-20664b5/">LinkedIn</a></p>
+  </section>
+</body>
+</html>
