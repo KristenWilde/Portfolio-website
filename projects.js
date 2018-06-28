@@ -3,7 +3,9 @@ module.exports = [
     title: 'Subtraction App',
     img: 'subtraction_app.png',
     img_url: 'http://subtract.online',
-    description: 'A game-like educational web app. Tracks progress toward mastering basic arithmetic, as well as time spent and problems practiced per day.',
+    description: "A game-like educational web app designed entirely by me. Tracks each user's \
+        progress toward mastering basic arithmetic, \
+        as well as time spent and problems practiced per day.",
     more: "Vue modules respond to data, user interaction, and optional query parameters. Designed to protect children's privacy.",
     tech: 'Ruby on Rails, Vue.js, HTML, SCSS',
     links: [
@@ -18,18 +20,44 @@ module.exports = [
     ],
   },
   {
-    title: 'Todo Manager',
+    title: 'Sample App',
+    img: 'sample_app.png',
+    img_url: 'https://sample-app-135.herokuapp.com/',
+    description: "If I finish this tutorial project, the world will have another Twitter clone. \
+        Even if I don't, you can sign up and view four pages of seed users. Developed with a full suite of tests.",
+    tech: 'Ruby on Rails, TDD with Minitest',
+    more: '',
+    links: [
+      { name: 'Live demo',
+        url: 'https://sample-app-135.herokuapp.com/' },
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/sample-app' }
+    ]
+  },
+  {
+    title: 'Todo App 1',
     img: 'todo_manager.png',
     img_url: '/images/todo_manager.png',
-    description: 'Allows user to manage items with CRUD actions, displays lists sorted by due date and completion.',
-    tech: "custom JavaScript classes, jQuery, HTML, SCSS",
-    more: 'Pixel-perfect HTML/CSS from Photoshop files',
+    description: 'Allows user to manage items with CRUD actions, displays lists automatically \
+      sorted by due date and completion. Pixel-perfect responsive HTML/CSS from Photoshop files.',
+    tech: "JavaScript, jQuery, Handlebars, HTML, CSS",
     links: [
       { name: 'Github: framework-free font-end JS',
         url: 'https://github.com/KristenWilde/Todo_Manager/blob/master/public/javascripts/todos.js' },
     ]
   },
-  { title: 'Todo Tracker',
+  {
+    title: 'Contact Manager',
+    img: 'contacts.png',
+    img_url: '/images/contacts.png',
+    description: 'Allows user to input, edit, and delete contacts. Filter by tag or search by name.',
+    tech: 'JavaScript, jQuery, Handlebars, HTML, SCSS',
+    links: [
+      { name: 'Github: framework-free font-end JS',
+        url: 'https://github.com/KristenWilde/contact_manager/blob/master/public/javascripts/contacts.js'},
+    ]
+  },
+  { title: 'Todo App 2',
     img: 'todo_tracker.png',
     img_url: 'https://glacial-woodland-26684.herokuapp.com/',
     description: 'Another todo app--with CRUD actions for items and lists.',
@@ -41,6 +69,19 @@ module.exports = [
       { name: 'Github',
         url: 'https://github.com/KristenWilde/Todo-tracker'},
     ],
+  },
+  {
+    title: 'Guess-a-word',
+    img: 'guess_a_word.png',
+    img_url: '/guess_a_word',
+    discription: 'Guess the word before all the apples fall from the tree.',
+    tech: 'JavaScript',
+    links: [
+      { name: 'Live demo',
+        url: '/guess_a_word'},
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/Launch-School-Javascript/tree/master/220/guess_a_word'}
+    ]
   },
   {
     title: 'Book Viewer',
@@ -60,12 +101,16 @@ module.exports = [
     title: 'Command line apps',
     img: 'ruby_games.png',
     img_url: '/images/ruby_games.png',
-    description: 'Challenge your computer to a game of tic-tac-toe or twenty-one. Or save some recipes to your own database.',
+    description: 'Challenge your computer to a game. Or save some recipes to your own psql database.',
     more: '',
-    tech: 'Ruby, Rubocop',
+    tech: 'Ruby, Rubocop, SQL',
     links: [
-      { name: 'Github: Ruby games',
-        url: 'https://github.com/KristenWilde/Launch-School-Ruby/blob/master/object_oriented_ruby/lesson_5/otherttt.rb'}
+      { name: 'Github: Tic-tac-toe and 21',
+        url: 'https://github.com/KristenWilde/Launch-School-Ruby/blob/master/object_oriented_ruby/lesson_5/otherttt.rb'},
+      { name: 'Github: Rock paper scissors lizard spock',
+        url: 'https://github.com/KristenWilde/Launch-School-Ruby/blob/master/object_oriented_ruby/lesson_2/rpsls.rb'},
+      { name: 'Github: Recipe manager',
+        url: 'https://github.com/KristenWilde/dishlist'}
     ]
   },
 ]

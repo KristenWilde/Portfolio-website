@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
   <title>Kristen Wilde</title>
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/portfolio.css">
@@ -27,17 +28,16 @@
     <h2>Skills include:</h2>
     <ul>
       <li>JavaScript</li>
-      <li>Node/Express.js</li>
       <li>Vue.js</li>
       <li>jQuery</li>
-      <li>Handlebars</li>
-      <li>EJS</li>
+      <li>Node/Express.js</li>
+      <li>Handlebars, EJS</li>
     </ul>
     <ul>
       <li>Ruby</li>
       <li>Ruby on Rails</li>
       <li>Sinatra</li>
-      <li>ERB, Haml</li>
+      <li>ERB, yaml</li>
       <li>PosgtreSQL</li>
     </ul>
     <ul>
@@ -50,6 +50,7 @@
   </div>
   <section id="portfolio">
     <h2>Sample work:</h2>
+    <div>
     <% projects.forEach(function(project) { %>
       <div class="project">
         <h3><%= project.title %></h3>
@@ -65,6 +66,7 @@
         </ul>
       </div>
     <% }); %>
+    </div>
   </section>
   <section id="about">
     <h2>About me:</h2>
