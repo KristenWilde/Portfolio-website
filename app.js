@@ -4,8 +4,9 @@ var app = express();
 var projects = require('./projects');
 
 app.set('view engine', 'ejs');
-app.use('/images', express.static('public/images'))
-app.use('/stylesheets', express.static('public/stylesheets'))
+app.use('/images', express.static('assets/images'))
+app.use('/stylesheets', express.static('assets/stylesheets'))
+app.use('/js/', express.static('assets/js'))
 
 app.get('/', function(req, res) {
   res.render('index', { projects: projects });
@@ -15,8 +16,8 @@ app.get('/profile/:name', function(req, res) {
   res.render('profile', { person: req.params.name });
 })
 
-app.get('/about', function(req, res) {
-  res.sendFile(__dirname + '/about.html')
+app.get('/guess', function(req, res) {
+  res.render('guess');
 })
 
 app.listen(3100);

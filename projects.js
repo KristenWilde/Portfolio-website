@@ -24,7 +24,7 @@ module.exports = [
     img: 'sample_app.png',
     img_url: 'https://sample-app-135.herokuapp.com/',
     description: "If I finish this tutorial project, the world will have another Twitter clone. \
-        Even if I don't, you can sign up and view four pages of seed users. Developed with a full suite of tests.",
+        As is, you can sign up and view four pages of seed users. Developed with a full suite of tests.",
     tech: 'Ruby on Rails, TDD with Minitest',
     more: '',
     links: [
@@ -35,6 +35,17 @@ module.exports = [
     ]
   },
   {
+    title: 'Contact Manager',
+    img: 'contacts.png',
+    img_url: '/images/contacts.png',
+    description: 'Allows user to input, edit, and delete contacts. Filter by tag or search by name.',
+    tech: 'JavaScript, jQuery, Handlebars, HTML, SCSS',
+    links: [
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/contact_manager/blob/master/public/javascripts/contacts.js'},
+    ]
+  },
+  {
     title: 'Todo App 1',
     img: 'todo_manager.png',
     img_url: '/images/todo_manager.png',
@@ -42,19 +53,8 @@ module.exports = [
       sorted by due date and completion. Pixel-perfect responsive HTML/CSS from Photoshop files.',
     tech: "JavaScript, jQuery, Handlebars, HTML, CSS",
     links: [
-      { name: 'Github: framework-free font-end JS',
+      { name: 'Github',
         url: 'https://github.com/KristenWilde/Todo_Manager/blob/master/public/javascripts/todos.js' },
-    ]
-  },
-  {
-    title: 'Contact Manager',
-    img: 'contacts.png',
-    img_url: '/images/contacts.png',
-    description: 'Allows user to input, edit, and delete contacts. Filter by tag or search by name.',
-    tech: 'JavaScript, jQuery, Handlebars, HTML, SCSS',
-    links: [
-      { name: 'Github: framework-free font-end JS',
-        url: 'https://github.com/KristenWilde/contact_manager/blob/master/public/javascripts/contacts.js'},
     ]
   },
   { title: 'Todo App 2',
@@ -74,7 +74,7 @@ module.exports = [
     title: 'Guess-a-word',
     img: 'guess_a_word.png',
     img_url: '/guess_a_word',
-    discription: 'Guess the word before all the apples fall from the tree.',
+    description: 'Guess the word before all the apples fall from the tree.',
     tech: 'JavaScript',
     links: [
       { name: 'Live demo',

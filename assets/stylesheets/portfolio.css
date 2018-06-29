@@ -48,6 +48,10 @@ h2, h3 {
   padding: .5em 0;
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 header {
   float: left;
   width: 60%;
