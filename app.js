@@ -1,12 +1,14 @@
-var express = require('express'); // returns a function
-var app = express();
-
-var projects = require('./projects');
+const express = require('express'); // returns a function
+const app = express();
+const path = require('path')
+const projects = require('./projects');
+const PORT = process.env.PORT || 3100
 
 app.set('view engine', 'ejs');
-app.use('/images', express.static('assets/images'))
-app.use('/stylesheets', express.static('assets/stylesheets'))
-app.use('/js', express.static('assets/js'))
+
+app.use('/images', express.static(path.join(__dirname,'assets/images')));
+app.use('/stylesheets', express.static(path.join(__dirname,'assets/stylesheets')));
+app.use('/js', express.static(path.join(__dirname,'assets/js')));
 
 app.get('/', function(req, res) {
   res.render('index', { projects: projects });
@@ -20,4 +22,4 @@ app.get('/guess', function(req, res) {
   res.render('guess');
 })
 
-app.listen(process.env.PORT || 3100, () => console.log('Server running') );
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
