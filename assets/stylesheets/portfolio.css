@@ -114,6 +114,14 @@ section {
   margin-top: 25px;
 }
 
+#about {
+  max-width: 900px;
+}
+
+#about p {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 1420px) {
   #portfolio > div {
     grid-template-columns: 1fr 1fr 1fr;

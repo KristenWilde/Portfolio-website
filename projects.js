@@ -20,6 +20,42 @@ module.exports = [
     ],
   },
   {
+    title: 'Contact Manager',
+    img: 'contacts.png',
+    img_url: '/images/contacts.png',
+    description: 'Allows user to input, edit, and delete contacts. Filter by tag or search by name.',
+    tech: 'JavaScript, jQuery, Handlebars, HTML, SCSS',
+    links: [
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/contact_manager/blob/master/public/javascripts/contacts.js'},
+    ]
+  },
+  {
+    title: 'Todo App 1',
+    img: 'todo_manager.png',
+    img_url: '/images/todo_manager.png',
+    description: 'Allows user to manage items, displays lists automatically \
+      sorted by due date and completion. Pixel-perfect responsive HTML/CSS from Photoshop files.',
+    tech: "JavaScript, jQuery, Handlebars, HTML, CSS",
+    links: [
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/Todo_Manager/blob/master/public/javascripts/todos.js' },
+    ]
+  },
+  { title: 'Todo App 2',
+    img: 'todo_tracker.png',
+    img_url: 'https://glacial-woodland-26684.herokuapp.com/',
+    description: 'Another todo app. CRUD actions for items and lists.',
+    tech: 'Sinatra, SQL',
+    more: '',
+    links: [
+      { name: 'Live demo',
+        url: 'https://glacial-woodland-26684.herokuapp.com/' },
+      { name: 'Github',
+        url: 'https://github.com/KristenWilde/Todo-tracker'},
+    ],
+  },
+  {
     title: 'Sample App',
     img: 'sample_app.png',
     img_url: 'https://sample-app-135.herokuapp.com/',
@@ -35,50 +71,14 @@ module.exports = [
     ]
   },
   {
-    title: 'Contact Manager',
-    img: 'contacts.png',
-    img_url: '/images/contacts.png',
-    description: 'Allows user to input, edit, and delete contacts. Filter by tag or search by name.',
-    tech: 'JavaScript, jQuery, Handlebars, HTML, SCSS',
-    links: [
-      { name: 'Github',
-        url: 'https://github.com/KristenWilde/contact_manager/blob/master/public/javascripts/contacts.js'},
-    ]
-  },
-  {
-    title: 'Todo App 1',
-    img: 'todo_manager.png',
-    img_url: '/images/todo_manager.png',
-    description: 'Allows user to manage items with CRUD actions, displays lists automatically \
-      sorted by due date and completion. Pixel-perfect responsive HTML/CSS from Photoshop files.',
-    tech: "JavaScript, jQuery, Handlebars, HTML, CSS",
-    links: [
-      { name: 'Github',
-        url: 'https://github.com/KristenWilde/Todo_Manager/blob/master/public/javascripts/todos.js' },
-    ]
-  },
-  { title: 'Todo App 2',
-    img: 'todo_tracker.png',
-    img_url: 'https://glacial-woodland-26684.herokuapp.com/',
-    description: 'Another todo app--with CRUD actions for items and lists.',
-    tech: 'Sinatra, SQL',
-    more: '',
-    links: [
-      { name: 'Live demo',
-        url: 'https://glacial-woodland-26684.herokuapp.com/' },
-      { name: 'Github',
-        url: 'https://github.com/KristenWilde/Todo-tracker'},
-    ],
-  },
-  {
     title: 'Guess-a-word',
     img: 'guess_a_word.png',
-    img_url: '/guess_a_word',
-    description: 'Guess the word before all the apples fall from the tree.',
+    img_url: '/guess',
+    description: 'Guess the word before all the apples fall from the tree. Not for mobile.',
     tech: 'JavaScript',
     links: [
       { name: 'Live demo',
-        url: '/guess_a_word'},
+        url: '/guess'},
       { name: 'Github',
         url: 'https://github.com/KristenWilde/Launch-School-Javascript/tree/master/220/guess_a_word'}
     ]
