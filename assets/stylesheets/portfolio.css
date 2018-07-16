@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  padding: 10px 30px;
+  padding: 0 30px 30px;
   background-color: #fff;
   color: #555;
   max-width: 110rem;
@@ -13,6 +13,10 @@ body {
 
 nav {
   position: fixed;
+  background-color: rgba(222,222,222,.2);
+  padding: 4px 30px;
+  left: 0;
+  right: 0;
 }
 
 nav li {
@@ -23,8 +27,8 @@ nav a {
   display: block;
   text-decoration: none;
   width: 5em;
-  line-height: 2.8em;
-  background-color: #999;
+  line-height: 2.6em;
+  background-color: #888;
   color: #fff;
   border-radius: 5px;
   text-align: center;
@@ -37,7 +41,7 @@ nav a:hover {
 
 #name {
   font-size: 3.5em;
-  padding-top: 3.5rem;
+  padding-top: 3.8rem;
 }
 
 span.code {
@@ -51,9 +55,6 @@ h1 {
 
 h2 {
   font-weight: 400;
-}
-
-h2, h3 {
   padding: .5em 0;
 }
 
@@ -61,7 +62,7 @@ h3 {
   font-size: 1.3rem;
 }
 
-header {
+header#home {
   float: left;
   width: 60%;
   margin-bottom: 40px;
@@ -71,12 +72,14 @@ header {
   float: right;
   width: 40%;
   text-align: center;
-  margin-top: 10px;
+  position: relative;
+  top: 58px;
 }
 
 #portrait img {
   width: 150px;
   border: 2px solid #ddd;
+  margin-bottom: 40px;
 }
 
 #skills {
@@ -97,21 +100,23 @@ section {
 #portfolio > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 15px;
 }
 
 .project {
   box-sizing: border-box;
-  /*width: 25rem;*/
-  height: 540px;
-  padding: 0 35px;
-  margin-bottom: 20px;
-  /*float: left;*/
-  border-right: 2px solid #ddd;
-  /*vertical-align: top;*/
+  min-height: 500px;
+  padding: 0 35px 0;
+  margin-bottom: 55px;
+  border-right: 3px solid #eee;
 }
 
 .project:nth-child(4n) {
   border-right: none;
+}
+
+.project header {
+  background-color: rgba();
 }
 
 .project img {
@@ -137,7 +142,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .project:nth-child(4n) {
-    border-right: 2px solid #ddd;
+    border-right: 3px solid #eee;
   }
   .project:nth-child(3n) {
     border-right: none;
@@ -149,7 +154,7 @@ section {
     grid-template-columns: 1fr 1fr;
   }
   .project:nth-child(3n) {
-    border-right: 2px solid #ddd;
+    border-right: 3px solid #eee;
   }
   .project:nth-child(2n) {
     border-right: none;
@@ -180,16 +185,21 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  header#home {
     width: 100%;
+    margin-bottom: 20px;
   }
   #portrait {
     float: none;
     width: 100%;
+    position: static;
   }
-  #portrait img:before {
+  #portrait img {
+    margin-bottom: 0;
+  }
+/*  #portrait img:before {
     content: '';
-  }
+  }*/
 }
 
 @media screen and (max-width: 550px) {

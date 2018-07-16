@@ -53,8 +53,10 @@
     <div>
     <% projects.forEach(function(project) { %>
       <div class="project">
-        <h3><%= project.title %></h3>
-        <h4><%= project.tech %></h4>
+        <header>
+          <h3><%= project.title %></h3>
+          <h4><%= project.tech %></h4>
+        </header>
         <a href="<%= project.img_url %>">
           <img src="/images/<%= project.img %>" alt="screenshot"/>
         </a>
