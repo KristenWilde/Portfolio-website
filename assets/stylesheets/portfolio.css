@@ -40,8 +40,12 @@ nav a:hover {
   padding-top: 3.5rem;
 }
 
-h1, h2 {
+h1 {
   font-weight: 200;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 h2, h3 {
@@ -179,7 +183,12 @@ section {
   }
   #portrait img:before {
     content: '';
+  }
+}
 
+@media screen and (max-width: 550px) {
+  .project {
+    padding: 0 10px 30px;
   }
 }
 
