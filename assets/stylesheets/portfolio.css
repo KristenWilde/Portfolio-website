@@ -13,10 +13,12 @@ body {
 
 nav {
   position: fixed;
-  background-color: rgba(222,222,222,.2);
-  padding: 4px 30px;
-  left: 0;
-  right: 0;
+  padding: 5px 30px;
+  background-color: rgba(222,222,222,.4);
+  height: 2.6rem;
+  z-index: 1;
+  width: 100%;
+  margin-left: -30px;
 }
 
 nav li {
@@ -27,7 +29,7 @@ nav a {
   display: block;
   text-decoration: none;
   width: 5em;
-  line-height: 2.6em;
+  line-height: 2.6rem;
   background-color: #888;
   color: #fff;
   border-radius: 5px;
@@ -59,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
 }
 
 header#home {
@@ -100,14 +102,13 @@ section {
 #portfolio > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 15px;
 }
 
 .project {
   box-sizing: border-box;
   min-height: 500px;
   padding: 0 35px 0;
-  margin-bottom: 55px;
+  margin: 25px 0;
   border-right: 3px solid #eee;
 }
 
@@ -116,13 +117,15 @@ section {
 }
 
 .project header {
-  background-color: rgba();
+/*  background: linear-gradient(#f7f7f7, #fff);
+  padding: 5px 10px;*/
 }
 
 .project img {
   width: 100%;
   margin: 15px 0 10px;
   border: 2px solid #ddd;
+  box-sizing: border-box;
 }
 
 .project ul {
@@ -197,9 +200,6 @@ section {
   #portrait img {
     margin-bottom: 0;
   }
-/*  #portrait img:before {
-    content: '';
-  }*/
 }
 
 @media screen and (max-width: 550px) {
