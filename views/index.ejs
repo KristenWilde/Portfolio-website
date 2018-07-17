@@ -86,5 +86,18 @@
     <p><a href="https://twitter.com/anotherkristenw">Follow me on Twitter</a></p>
     <p><a href="https://medium.com/@kristenfletcherwilde">Read some blog posts</a></p>
   </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navButtons = [].slice.call(document.querySelectorAll('nav a'));
+  navButtons.forEach(function(button) {
+    const targetSelector = button.getAttribute('href');;
+    button.addEventListener('click', function(e){
+      e.preventDefault();
+      const section = document.querySelector(targetSelector)
+      section.scrollIntoView({behavior: "smooth", block: "start"})
+    });
+  });
+});
+</script>
 </body>
 </html>
