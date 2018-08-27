@@ -11,11 +11,11 @@
   <div class="nav-background"></div>
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://docs.google.com/document/d/1CE6r1uWabzITBLh1ajj98HbLRYFXmfWRklXAFQg0klo/edit?usp=sharing">Resume</a></li>
+      <li><a class="section-link" href="#home">Home</a></li>
+      <li><a class="section-link" href="#portfolio">Portfolio</a></li>
+      <li><a class="section-link" href="#about">About</a></li>
+      <li><a class="section-link" href="#contact">Contact</a></li>
+      <li><a href="https://docs.google.com/document/d/1CE6r1uWabzITBLh1ajj98HbLRYFXmfWRklXAFQg0klo" target="_blank">Resume</a></li>
     </ul>
   </nav>
   <header id="home">
@@ -89,10 +89,11 @@
     <p><a href="https://github.com/KristenWilde" target="_blank">Visit my Github</a></p>
     <p><a href="https://twitter.com/anotherkristenw" target="_blank">Follow me on Twitter</a></p>
     <p><a href="https://medium.com/@kristenfletcherwilde" target="_blank">Read some blog posts</a></p>
+    <p><a href="https://docs.google.com/document/d/1CE6r1uWabzITBLh1ajj98HbLRYFXmfWRklXAFQg0klo" target="_blank">View my resume</a></p>
   </section>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const navButtons = [].slice.call(document.querySelectorAll('nav a'));
+  const navButtons = [].slice.call(document.querySelectorAll('.section-link'));
   navButtons.forEach(function(button) {
     const targetSelector = button.getAttribute('href');;
     button.addEventListener('click', function(e){
