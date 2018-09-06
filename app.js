@@ -22,4 +22,8 @@ app.get('/guess', function(req, res) {
   res.render('guess');
 })
 
+app.get('/this', function(req, res) {
+  res.render('presentation')
+})
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
