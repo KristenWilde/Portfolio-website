@@ -23,10 +23,6 @@ module.exports = [
     tech: 'Ruby on Rails, Vue.js, HTML, SCSS',
     links: [
       {
-        name: 'Live site',
-        url: 'http://subtract.online',
-      },
-      {
         name: 'Github: sample Rails controller',
         url: 'https://github.com/KristenWilde/First-grade-math/blob/master/app/controllers/users_controller.rb',
       },
