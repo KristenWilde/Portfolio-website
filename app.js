@@ -26,4 +26,8 @@ app.get('/this', function(req, res) {
   res.render('presentation')
 })
 
+app.get('/spy', function(req, res) {
+  res.render('spy')
+})
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
