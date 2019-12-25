@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/stylesheets/portfolio.css">
 </head>
 <body>
+  <% var startGame = () => console.log('starting') %>
   <main>
     <h1>Spy Game</h1>
     <h2>How many players?</h2>
@@ -18,18 +19,23 @@
     <textarea name="locations" id="locations" cols="30" rows="10"><%= game.locations %>
     </textarea>
     <a href="mailto:?body=<%= encodeURIComponent(game.locations) %>">Send by Email</a>
-    <button>Start Game</button>
-    <% for(var p = 0; p < game.players; p += 1) { %>
-      <div>
-        <span className="player-<%= p %>-show" >
-          Player <%= p + 1 %>
-        </span>
-        <input type="checkbox" name="player-<%= p %>-hide"/>
-      </div>
+    <button onclick="<%= function(){game.startGame()} %>">Start Game</button>
+    <% if(game.started){ %>
+      <% for(var p = 0; p < game.players; p += 1) { %>
+        <div>
+          <span id="player-<%= p %>-show" onclick="showPlayer">
+            Player <%= p + 1 %>
+          </span>
+          <input type="checkbox" id="player-<%= p %>-hide" onclick=""/>
+        </div>
+      <% } %>
     <% } %>
   </main>
 </body>
 <script>
+  // var startGame = () => console.log('starting')//game.startGame
+  // var showPlayer = game.showPlayer
+
 document.addEventListener('DOMContentLoaded', function() {
 
 });
