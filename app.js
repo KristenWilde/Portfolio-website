@@ -2,6 +2,7 @@ const express = require('express'); // returns a function
 const app = express();
 const path = require('path')
 const projects = require('./projects');
+const game = require('./spy_game')
 const PORT = process.env.PORT || 3100
 
 app.set('view engine', 'ejs');
@@ -27,7 +28,7 @@ app.get('/this', function(req, res) {
 })
 
 app.get('/spy', function(req, res) {
-  res.render('spy')
+  res.render('spy', {game: game})
 })
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
