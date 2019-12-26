@@ -6,38 +6,34 @@
   <title>Spy Game</title>
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/portfolio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-  <% var startGame = () => console.log('starting') %>
   <main>
     <h1>Spy Game</h1>
     <h2>How many players?</h2>
-    <input type="number" name="players" id="players" value="<%= game.players %>" required/>
+    <input
+      type="number"
+      name="players"
+      id="players"
+      value="4"
+      required
+    />
     <h2>How many spies?</h2>
-    <input type="number" name="spies" id="spies" value="<%= game.spies %>" required/>
+    <input type="number" name="spies" id="spies" value="1" required/>
     <h2>Locations:</h2>
-    <textarea name="locations" id="locations" cols="30" rows="10"><%= game.locations %>
+    <textarea name="locations" id="locations" cols="30" rows="10">
+Fletcher grandparents' house
+Elementary school
+Castle
+Airport
+Forest
     </textarea>
-    <a href="mailto:?body=<%= encodeURIComponent(game.locations) %>">Send by Email</a>
-    <button onclick="<%= function(){game.startGame()} %>">Start Game</button>
-    <% if(game.started){ %>
-      <% for(var p = 0; p < game.players; p += 1) { %>
-        <div>
-          <span id="player-<%= p %>-show" onclick="showPlayer">
-            Player <%= p + 1 %>
-          </span>
-          <input type="checkbox" id="player-<%= p %>-hide" onclick=""/>
-        </div>
-      <% } %>
-    <% } %>
+    <a id="email_button" href="mailto:">Send by Email</a>
+    <button id="start_button">Start Game</button>
+    <div id="player_list">
+    </div>
   </main>
 </body>
-<script>
-  // var startGame = () => console.log('starting')//game.startGame
-  // var showPlayer = game.showPlayer
-
-document.addEventListener('DOMContentLoaded', function() {
-
-});
-</script>
+<script src="/js/spy_game.js"></script>
 </html>
