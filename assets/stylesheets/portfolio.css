@@ -64,6 +64,11 @@ h3 {
   font-size: 1.35rem;
 }
 
+textarea {
+  font-size: inherit;
+  color: inherit;
+}
+
 header#home {
   float: left;
   width: 60%;

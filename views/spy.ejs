@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #fff">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
@@ -11,28 +11,43 @@
 <body>
   <main>
     <h1>Spy Game</h1>
-    <h2>How many players?</h2>
-    <input
-      type="number"
-      name="players"
-      id="players"
-      value="4"
-      required
-    />
-    <h2>How many spies?</h2>
-    <input type="number" name="spies" id="spies" value="1" required/>
-    <h2>Locations:</h2>
-    <textarea name="locations" id="locations" cols="30" rows="10">
+    <div>
+      <label>How many players?
+        <input
+          type="number"
+          name="players"
+          id="players"
+          value="4"
+          style="width: 30px;"
+          required
+        />
+      </label>
+    </div>
+    <div>
+      <label>How many spies?
+        <input type="number" name="spies" id="spies" value="1" required style="width: 30px"/>
+      </label>
+    </div>
+    <div>
+      <label>
+        <p>Locations:</p>
+        <textarea name="locations" id="locations" cols="30" rows="10">
 Fletcher grandparents' house
 Elementary school
 Castle
 Airport
 Forest
-    </textarea>
-    <a id="email_button" href="mailto:">Send by Email</a>
-    <button id="start_button">Start Game</button>
-    <div id="player_list">
+        </textarea>
+      </label>
     </div>
+    <div>
+      <a id="email_button" href="mailto:">Send by Email</a>
+    </div>
+    <div>
+      <button id="start_button" style="padding: 10px 20px; border-radius: 10px; font:inherit; margin-bottom: 20px">Start Game</button>
+    </div>
+    <ol id="player_list">
+    </ol>
   </main>
 </body>
 <script src="/js/spy_game.js"></script>
